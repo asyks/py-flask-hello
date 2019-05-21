@@ -12,5 +12,5 @@ app.url_map.add(Rule("/", methods=("HEAD", "GET"), endpoint="index"))
 
 
 @app.endpoint("index")
-def hello():
+def index():
     return constants.SUCCESS_MESSAGE
