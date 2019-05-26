@@ -40,6 +40,7 @@ RUN mkdir -p /opt/py-flask-hello
 COPY --from=builder /opt/py-flask-hello-virtualenv /opt/py-flask-hello-virtualenv
 
 WORKDIR /opt/py-flask-hello
+COPY requirements.txt .
 COPY setup.py .
 COPY setup.cfg .
 COPY py_flask_hello py_flask_hello
